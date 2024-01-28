@@ -46,7 +46,26 @@ class Customer {
   }
 }
 
+//class movie store
 
+class movieStore{
+    constructor(){
+        this.movies = [];
+        this.customers = []
+    }
+
+    addMovie(movie){
+        this.movies.push(movie);
+        console.log(`${movie.title} has been added to the store.`);
+    }
+
+    addCustomer(customer){
+        this.customers.push(customer);
+        console.log(`${customer.name} has become a customer.`)
+    }
+}
+
+const movieStore = new movieStore ();
 const movie1 = new Movie("Inception", "Sci-Fi", 5);
 const movie2 = new Movie("Peaky Blinders", "Crime", 3);
 
